@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fff5f5db">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zona:"
+                android:id="@+id/textViewZona" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configuracion"
+                android:id="@+id/buttonConfiguracion"
+                android:background="#ffb53c71"
+                android:layout_row="0"
+                android:layout_column="12"
+                android:onClick="configuracion"/>
+        </GridLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="445dp"
+            android:id="@+id/listViewRestaurantes"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffe2d9b2"
+            android:onClick="darRestaurante"/>
+
+    </LinearLayout>
+</RelativeLayout>
